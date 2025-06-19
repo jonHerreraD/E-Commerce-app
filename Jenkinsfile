@@ -25,6 +25,7 @@ pipeline{
                         git push origin test1
                     '''
                 }
+            }
         }
         stage("test"){
             when {
