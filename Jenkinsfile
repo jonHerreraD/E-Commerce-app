@@ -17,7 +17,7 @@ pipeline{
             steps{
                 sh '''
                     git checkout test1
-                    git merge dev1
+                    git merge origin/dev1
                     git push origin test1
                 '''
             }
