@@ -32,23 +32,22 @@ pipeline {
             }
         }
 
-        stage("test"){
+        stage("test") {
             when {
                 branch 'test1'
             }
-            steps{
+            steps {
                 echo "Testing"
             }
         }
-        stage("Pushing"){
+        stage("Pushing") {
             when {
                 branch 'main'
             }
-            steps{
+            steps {
                 echo "Push"
             }
         }
     }
 
 }
-
