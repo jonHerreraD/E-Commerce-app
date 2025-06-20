@@ -65,9 +65,10 @@ pipeline {
                 echo "Push"
                 echo "Push"
                 echo "Push"
+                echo "push"
             }
         }
-        stage("Merge to Main") {
+        stage("Push to github") {
             when {
                 branch 'test1'
             }
