@@ -62,6 +62,9 @@ pipeline {
             }
             steps{
                 echo "Push"
+                echo "Push"
+                echo "Push"
+                echo "Push"
             }
         }
         stage("Merge to Main") {
